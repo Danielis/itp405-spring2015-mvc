@@ -1,0 +1,71 @@
+html{
+	height: 100%;
+	/*background-image: url('http://fc07.deviantart.net/fs70/f/2013/174/3/e/recycled_texture_background_by_sandeep_m-d6aeau9.jpg');*/
+	/*background-image: url('http://www.hdesktops.com/wp-content/uploads/2013/12/abstract-wallpaper-photos-of-music-stars-13.jpg');*/
+	background-image: url('http://i.imgur.com/FAqLLO8.gif');
+	background-size: 100% 100%;
+	background-repeat: repeat-y;
+}
+body{
+	color: white;
+	width: 1400px;
+	height: 100%;
+	margin: auto auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.submittedMessage{
+	background-color: rgba(0,200,0,.3);
+}
+.results{
+	width:100%;
+	text-align: left;
+}
+.results table{	
+	width:100%;
+	text-align: left;
+}
+.results thead{
+	font-size: 20px;
+	font-weight: bold;
+}
+.results tr{
+	border: 1px solid rgba(0,0,0,1);
+}
+.results td{
+	font-size: 16px;
+	max-width: 300px;
+	height: 20px;
+	border: 1px solid rgba(255,255,255,.1);
+	background-color: rgba(200,200,200,.1);
+}	
+.results td:hover{
+	font-size: 18px;
+	max-width: 300px;
+	height: 20px;
+	border: 1px solid rgba(0,255,0,.2);
+	background-color: rgba(173,0,0,.6);
+}
+
+.search{
+	width: 100%;
+}
+.search span{
+	padding-left: 20px;
+}
+.search form{
+	color:white;
+}
+.search input{
+	color:white;
+	font-size: 16px;
+	border: 1px solid rgba(255,255,255,.1);
+	background-color: rgba(200,200,200,.15);
+}
+.search select{
+	color: white;
+	font-size: 16px;
+	border: 1px solid rgba(255,255,255,.1);
+	background-color: rgba(200,200,200,.15);
+}
