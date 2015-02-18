@@ -22,7 +22,7 @@ class DvdsController extends Controller{
 		
 		// Query the DB
 		$dvds = (new DvdQuery())->search($request->input('dvd_title'),$request->input('Selgenre'),$request->input('Selrating'));
-		
+		// dd($dvds);
 		// Return the view and results
 		return view('results', [
 			'dvd_title' => $request->input('dvd_title'),

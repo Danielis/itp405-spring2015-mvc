@@ -14,7 +14,7 @@ Class DvdQuery{
 
 	public function search($term,$genre,$rating){
 		$query =  DB::table('dvds')
-			// ->select('title','genre_name','rating_name','sound_name','format_name','label_name',DATE_FORMAT(date('release_date'),'%m/%d/%Y'))
+			->select(DB::raw('title,genre_name,rating_name,sound_name,format_name,label_name,DATE_FORMAT(release_date,"%m/%d/%Y") as release_date_f'))
 			->join('genres','genres.id','=','dvds.genre_id')
 			->join('ratings','ratings.id','=','dvds.rating_id')
 			->join('labels','labels.id','=','dvds.label_id')

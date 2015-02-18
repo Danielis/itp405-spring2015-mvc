@@ -31,7 +31,7 @@
 					<td><?php echo $dvd->label_name?></td>
 					<td><?php echo $dvd->sound_name?></td>
 					<td><?php echo $dvd->format_name?></td>
-					<td><?php echo date_format(new DateTime($dvd->release_date),'m/d/Y')?></td>
+					<td><?php echo $dvd->release_date_f?></td>
 				</tr>
 				<?php } ?>
 			</tbody>
