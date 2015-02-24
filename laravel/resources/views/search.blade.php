@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>DVD Search</title>
-	<link rel="stylesheet" href="<?php echo asset('css/custom.css')?>" type="text/css"> 
-</head>
-<body>
+@extends('layout')
 
-	<h1>Matrix DVD Search</h1>	
+@section('content')
+	<h1>DVD Search</h1>	
 	<div class="search">
-		<form action="/dvds" method="get">
+		<form action="/dvds/results" method="get">
 			<Span>DVD:</Span>
-			<input	type="text" name="dvd_title" value="Search Here">
+			<input	type="text" name="dvd_title" placeholder="Search Here">
 			<span>Genre:</span>
 			<select name="Selgenre">
 				<option value="">All</option>
@@ -28,5 +23,4 @@
 			<input type="submit" value="Search">
 		</form>
 	</div>
-</body>
-</html>
+@stop

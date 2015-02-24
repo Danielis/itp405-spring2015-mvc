@@ -2,7 +2,8 @@ html{
 	height: 100%;
 	/*background-image: url('http://fc07.deviantart.net/fs70/f/2013/174/3/e/recycled_texture_background_by_sandeep_m-d6aeau9.jpg');*/
 	/*background-image: url('http://www.hdesktops.com/wp-content/uploads/2013/12/abstract-wallpaper-photos-of-music-stars-13.jpg');*/
-	background-image: url('http://i.imgur.com/FAqLLO8.gif');
+	/*background-image: url('http://i.imgur.com/FAqLLO8.gif');*/
+	background-image: url('http://th00.deviantart.net/fs29/PRE/f/2008/061/8/8/Background_for_my_Website_by_aisu_isme.png');
 	background-size: 100% 100%;
 	background-repeat: repeat-y;
 }
@@ -14,7 +15,12 @@ body{
 	padding-left: 10px;
 	padding-right: 10px;
 }
-
+.success{
+	color:green;
+}
+.error{
+	color: red;
+}
 .submittedMessage{
 	background-color: rgba(0,200,0,.3);
 }
@@ -33,19 +39,26 @@ body{
 .results tr{
 	border: 1px solid rgba(0,0,0,1);
 }
+.results th{
+	border: 1px solid rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,.5);
+}
 .results td{
 	font-size: 16px;
 	max-width: 300px;
 	height: 20px;
-	border: 1px solid rgba(255,255,255,.1);
-	background-color: rgba(200,200,200,.1);
+	border: 1px solid rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,.3);
 }	
 .results td:hover{
-	font-size: 18px;
-	max-width: 300px;
-	height: 20px;
-	border: 1px solid rgba(0,255,0,.2);
-	background-color: rgba(173,0,0,.6);
+	border: 1px solid rgba(0,0,0,.6);
+	background-color: rgba(0,0,0,.45);
+}
+.results form input{
+	width: 100%;
+	color: white;
+	border: 1px solid rgba(255,255,255,.2);
+	background-color: rgba(0,0,55,.1);
 }
 
 .search{
@@ -55,17 +68,71 @@ body{
 	padding-left: 20px;
 }
 .search form{
-	color:white;
+	color:black;
+	font-size: 20px;
 }
 .search input{
 	color:white;
 	font-size: 16px;
-	border: 1px solid rgba(255,255,255,.1);
-	background-color: rgba(200,200,200,.15);
+	border: 1px solid rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,.3);
 }
 .search select{
 	color: white;
 	font-size: 16px;
-	border: 1px solid rgba(255,255,255,.1);
-	background-color: rgba(200,200,200,.15);
+	border: 1px solid rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,.3);
 }
+
+.review{
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.review span{
+	font-size: 20px;
+	color: white;
+	width: 5%;
+
+}
+.review form{
+	color:white;
+}
+.review select{
+	margin-bottom: 5px;
+	color: white;
+	font-size: 16px;
+	width: 10%;
+	height: 20px;
+	border: 1px solid rgba(0,0,0,.2);
+	background-color: rgba(0,0,0,.2);
+}	
+.review .title{
+	margin-bottom: 5px;
+	font-size: 16px;
+	color: white;
+	width: 80%;
+	height: 20px;
+	border: 1px solid rgba(0,0,0,.2);
+	background-color: rgba(0,0,0,.2);
+}
+.review .submit{
+	margin-bottom: 5px;
+	font-size: 20px;
+	color:white;
+	width: 25%;
+	height: 25px;
+	margin: 0 auto;
+	border: 1px solid rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,.1);
+}
+.review .description{
+	margin-bottom: 5px;
+	font-size: 16px;
+	color: white;
+	width: 91%;
+	height: 30px;
+	border: 1px solid rgba(0,0,0,.1);
+	background-color: rgba(0,0,0,.2);	
+}
+

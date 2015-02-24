@@ -21,4 +21,5 @@ Route::controllers([
 ]);
 
 Route::get('/dvds/search','DvdsController@search');
-Route::get('/dvds','DvdsController@results');
+Route::get('/dvds/results','DvdsController@results');
+Route::get('/dvds/{id}','DvdsController@review');
