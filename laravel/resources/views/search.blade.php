@@ -1,26 +1,37 @@
 @extends('layout')
 
+
 @section('content')
-	<h1>DVD Search</h1>	
-	<div class="search">
-		<form action="/dvds/results" method="get">
-			<Span>DVD:</Span>
-			<input	type="text" name="dvd_title" placeholder="Search Here">
-			<span>Genre:</span>
-			<select name="Selgenre">
-				<option value="">All</option>
-				<?php foreach ($genres as $genre){?>
-					<option value="<?php echo $genre->id ?>"><?php echo $genre->genre_name ?></option>
-				<?php } ?>
-			</select>
-			<span>Rating:</span>
-			<select name="Selrating">
-				<option value="">All</option>
-				<?php foreach ($ratings as $rating):?>
-					<option value="<?php echo $rating->id ?>"><?php echo $rating->rating_name ?></option>
-				<?php endforeach ?>
-			</select>
-			<input type="submit" value="Search">
-		</form>
+	<div class="sideBar">
+	@foreach ($genres as $genre)
+		<div class="sideBarItem">
+			<a href="{{url('genres/'.$genre->genre_name.'/dvds')}}">{{$genre->genre_name}}
+		</div>
+	@endforeach
 	</div>
+
+	@if(isset($dvds))
+		<div class="sideBarResults">
+			<table>
+				<thead>
+					<tr>
+						<th>Title</th>
+						<th class="gr">Rating</th>
+						<th class="gr">Genre</th>
+						<th>Label</th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php foreach ($dvds as $dvd){?>
+					<tr>
+						<td class="a"><?php echo $dvd->title?></td>
+						<td class="b"><?php echo $dvd->rating->rating_name?></td>
+						<td class="c"><?php echo $dvd->genre->genre_name?></td>
+						<td class="d"><?php echo $dvd->label->label_name?></td>
+					</tr>
+					<?php } ?>
+				</tbody>
+			</table>
+		</div>
+	@endif
 @stop

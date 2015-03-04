@@ -136,3 +136,59 @@ body{
 	background-color: rgba(0,0,0,.2);	
 }
 
+.sideBar{
+	width:25%;
+	float:left;
+}
+.sideBarItem{
+	color:white;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	background-color: rgba(0,0,0,.2);
+	font-size: 20px;
+}
+.sideBarItem:hover{
+	background-color: rgba(0,0,0,.4);
+	font-size: 22px;
+}
+.sideBarItem a:link{
+	color:white;
+}
+.sideBarItem a:active{
+	color:red;
+}
+.sideBarItem a:visited{
+	color:rgba(0,0,200,.9);
+}
+.sideBarItem:hover a{
+	color:rgba(0,0,200,.9);
+}
+
+.sideBarResults{
+	color: white;
+	background-color: rgba(0,0,0,.4);
+}
+.sideBarResults th{
+	font-weight: bold;
+	font-size: 25px;
+}
+.sideBarResults td{
+	padding-left: 10px;
+	padding-right: 5px;
+	height: 40px;
+}
+.sideBarResults .gr{
+	width: 5%;
+}
+.sideBarResults .a{
+	background-color: rgba(0,0,0,.2);
+}
+.sideBarResults .b{
+	background-color: rgba(0,0,0,.3);
+}
+.sideBarResults .c{
+	background-color: rgba(0,0,0,.4);
+}
+.sideBarResults .d{
+	background-color: rgba(0,0,0,.5);
+}
