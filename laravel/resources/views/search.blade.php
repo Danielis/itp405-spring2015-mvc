@@ -25,9 +25,9 @@
 					<?php foreach ($dvds as $dvd){?>
 					<tr>
 						<td class="a"><?php echo $dvd->title?></td>
-						<td class="b"><?php echo $dvd->rating->rating_name?></td>
+						<td class="b"><?php echo $dvd->rating["rating_name"]?></td>
 						<td class="c"><?php echo $dvd->genre->genre_name?></td>
-						<td class="d"><?php echo $dvd->label->label_name?></td>
+						<td class="d"><?php echo $dvd->label["label_name"]?></td>
 					</tr>
 					<?php } ?>
 				</tbody>

@@ -137,19 +137,20 @@ body{
 }
 
 .sideBar{
-	width:25%;
+	width:40%;
 	float:left;
+	background-color: rgba(0,0,0,.2);
 }
 .sideBarItem{
 	color:white;
 	padding-top: 7px;
 	padding-bottom: 7px;
 	background-color: rgba(0,0,0,.2);
-	font-size: 20px;
+	font-size: 18px;
+	white-space: nowrap;
 }
 .sideBarItem:hover{
 	background-color: rgba(0,0,0,.4);
-	font-size: 22px;
 }
 .sideBarItem a:link{
 	color:white;
@@ -167,6 +168,9 @@ body{
 .sideBarResults{
 	color: white;
 	background-color: rgba(0,0,0,.4);
+	float: left;
+	width: 50%;
+	padding-left: 25px;
 }
 .sideBarResults th{
 	font-weight: bold;
